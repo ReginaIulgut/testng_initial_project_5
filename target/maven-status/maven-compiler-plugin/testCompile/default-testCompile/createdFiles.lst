@@ -1,0 +1,9 @@
+utilities/Driver.class
+scripts/TechGlobalLoginFormTest.class
+utilities/TestData.class
+pages/TechGlobalFrontendTestingHomePage.class
+utilities/ConfigReader.class
+pages/TechGlobalLoginFormPage.class
+pages/TechGlobalBasePage.class
+utilities/Waiter.class
+scripts/TechGlobalBase.class

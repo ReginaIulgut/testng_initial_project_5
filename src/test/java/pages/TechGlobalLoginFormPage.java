@@ -29,6 +29,15 @@ public class TechGlobalLoginFormPage extends TechGlobalBasePage {
     @FindBy(id = "logout")
     public WebElement logoutButton;
 
+    @FindBy(id = "success_lgn")
+    public WebElement successLogin;
+
+    @FindBy(id = "error_message")
+    public WebElement errorMessageUsername;
+
+    @FindBy(id = "error_message")
+    public WebElement errorMessagePassword;
+
     @FindBy(id = "forgot-password")
     public WebElement forgotPasswordLink;
 
@@ -46,13 +55,4 @@ public class TechGlobalLoginFormPage extends TechGlobalBasePage {
 
     @FindBy(id = "confirmation_message")
     public WebElement confirmationMessage;
-
-    @FindBy(id = "success_lgn")
-    public WebElement successLogin;
-
-    @FindBy(id = "error_message")
-    public WebElement errorMessageUsername;
-
-    @FindBy(id = "error_message")
-    public WebElement errorMessagePassword;
 }

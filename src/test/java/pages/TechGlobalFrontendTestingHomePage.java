@@ -16,5 +16,6 @@ public class TechGlobalFrontendTestingHomePage extends TechGlobalBasePage {
 
     public void clickOnCard(int cardIndex) {
         cards.get(cardIndex).click();
+
     }
 }

@@ -11,10 +11,8 @@ public class TechGlobalBasePage {
     public TechGlobalBasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-
     @FindBy(id = "dropdown-button")
     public WebElement headerDropdown;
-
     @FindBy(css = "#dropdown-menu a")
     public List<WebElement> headerDropdownOptions;
 }
