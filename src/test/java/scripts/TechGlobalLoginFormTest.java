@@ -15,11 +15,11 @@ public class TechGlobalLoginFormTest extends TechGlobalBase {
 
         techGlobalFrontendTestingHomePage.headerDropdown.click();
         techGlobalFrontendTestingHomePage.headerDropdownOptions.get(0).click();
+        techGlobalFrontendTestingHomePage.clickOnCard(15);
     }
 
     @Test(priority = 1, description = "Validate Login Form card")
     public void validateLoginForm() {
-        techGlobalFrontendTestingHomePage.clickOnCard(15);
 
         Assert.assertTrue(techGlobalLoginFormPage.heading.isDisplayed());
         Assert.assertEquals(techGlobalLoginFormPage.heading.getText(), "Login Form");
@@ -41,7 +41,6 @@ public class TechGlobalLoginFormTest extends TechGlobalBase {
 
     @Test(priority = 2, description = "Validate Login Form card valid login")
     public void validLoginForm() {
-        techGlobalFrontendTestingHomePage.clickOnCard(15);
 
         techGlobalLoginFormPage.usernameInputBox.sendKeys(TestData.validUsername);
         techGlobalLoginFormPage.passwordInputBox.sendKeys(TestData.validPassword);
@@ -53,7 +52,6 @@ public class TechGlobalLoginFormTest extends TechGlobalBase {
     }
     @Test(priority = 3, description = "Validate Login Form card valid login and then logout")
     public void validateLoginAndLogoutForm() {
-        techGlobalFrontendTestingHomePage.clickOnCard(15);
 
         techGlobalLoginFormPage.usernameInputBox.sendKeys(TestData.validUsername);
         techGlobalLoginFormPage.passwordInputBox.sendKeys(TestData.validPassword);
@@ -68,7 +66,6 @@ public class TechGlobalLoginFormTest extends TechGlobalBase {
             "Forgot Password? " +
             "Link and Reset Password page")
     public void validateForgotPassword() {
-        techGlobalFrontendTestingHomePage.clickOnCard(15);
 
         techGlobalLoginFormPage.forgotPasswordLink.click();
         Assert.assertTrue(techGlobalLoginFormPage.resetPasswordHeader.isDisplayed());
@@ -79,7 +76,6 @@ public class TechGlobalLoginFormTest extends TechGlobalBase {
 
     @Test(priority = 5, description = "Validate TechGlobal Login Form card Reset Password link")
     public void validateResetPasswordLink() {
-        techGlobalFrontendTestingHomePage.clickOnCard(15);
 
         techGlobalLoginFormPage.forgotPasswordLink.click();
         techGlobalLoginFormPage.emailInputBox.sendKeys(TestData.emailForResetPassword);
@@ -90,7 +86,6 @@ public class TechGlobalLoginFormTest extends TechGlobalBase {
     @Test(priority = 6, description = "Validate TechGlobal Login Form card invalid login with \n" +
             "wrong username")
     public void validateInvalidUsername(){
-        techGlobalFrontendTestingHomePage.clickOnCard(15);
 
         techGlobalLoginFormPage.usernameInputBox.sendKeys(TestData.invalidUsername);
         techGlobalLoginFormPage.passwordInputBox.sendKeys(TestData.validPassword);
@@ -101,7 +96,6 @@ public class TechGlobalLoginFormTest extends TechGlobalBase {
     @Test(priority = 7, description = "Validate TechGlobal Login Form card invalid login with \n" +
             "wrong password")
     public void validateInvalidPassword(){
-        techGlobalFrontendTestingHomePage.clickOnCard(15);
 
         techGlobalLoginFormPage.usernameInputBox.sendKeys(TestData.validUsername);
         techGlobalLoginFormPage.passwordInputBox.sendKeys(TestData.invalidPassword);
@@ -112,7 +106,6 @@ public class TechGlobalLoginFormTest extends TechGlobalBase {
     @Test(priority = 8, description = "Validate TechGlobal Login Form card invalid login with \n" +
             "both wrong credentials")
     public void validateInvalidUsernameAndPassword(){
-        techGlobalFrontendTestingHomePage.clickOnCard(15);
 
         techGlobalLoginFormPage.usernameInputBox.sendKeys(TestData.invalidUsername);
         techGlobalLoginFormPage.passwordInputBox.sendKeys(TestData.invalidPassword);
